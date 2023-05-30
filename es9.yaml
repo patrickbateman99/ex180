@@ -1,0 +1,93 @@
+[
+     {
+          "Id": "7a094f97a96832b3f320af22f9cb04de523025d5c95a98ce2ecdf5b7fc2e54f4",
+          "Digest": "sha256:bcd57860a455772d6e0d08b2e950bcfaf3f941f5fb7a4c8ba7ac1fd45faedba1",
+          "RepoTags": [
+               "docker.io/bitnami/nginx:latest"
+          ],
+          "RepoDigests": [
+               "docker.io/bitnami/nginx@sha256:bcd57860a455772d6e0d08b2e950bcfaf3f941f5fb7a4c8ba7ac1fd45faedba1",
+               "docker.io/bitnami/nginx@sha256:f1608035adfcaa2734750d3d70688dce856c2665b056c47402204d219617e0de"
+          ],
+          "Parent": "",
+          "Comment": "",
+          "Created": "2023-05-29T13:52:07.218287117Z",
+          "Config": {
+               "User": "1001",
+               "ExposedPorts": {
+                    "8080/tcp": {},
+                    "8443/tcp": {}
+               },
+               "Env": [
+                    "PATH=/opt/bitnami/common/bin:/opt/bitnami/nginx/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                    "HOME=/",
+                    "OS_ARCH=amd64",
+                    "OS_FLAVOUR=debian-11",
+                    "OS_NAME=linux",
+                    "APP_VERSION=1.25.0",
+                    "BITNAMI_APP_NAME=nginx",
+                    "NGINX_HTTPS_PORT_NUMBER=",
+                    "NGINX_HTTP_PORT_NUMBER="
+               ],
+               "Entrypoint": [
+                    "/opt/bitnami/scripts/nginx/entrypoint.sh"
+               ],
+               "Cmd": [
+                    "/opt/bitnami/scripts/nginx/run.sh"
+               ],
+               "WorkingDir": "/app",
+               "Labels": {
+                    "org.opencontainers.image.base.name": "docker.io/bitnami/minideb:bullseye",
+                    "org.opencontainers.image.created": "2023-05-29T13:50:49Z",
+                    "org.opencontainers.image.description": "Application packaged by VMware, Inc",
+                    "org.opencontainers.image.licenses": "Apache-2.0",
+                    "org.opencontainers.image.ref.name": "1.25.0-debian-11-r2",
+                    "org.opencontainers.image.title": "nginx",
+                    "org.opencontainers.image.vendor": "VMware, Inc.",
+                    "org.opencontainers.image.version": "1.25.0"
+               }
+          },
+          "Version": "",
+          "Author": "",
+          "Architecture": "amd64",
+          "Os": "linux",
+          "Size": 96273484,
+          "VirtualSize": 96273484,
+          "GraphDriver": {
+               "Name": "overlay",
+               "Data": {
+                    "UpperDir": "/home/francesco/.local/share/containers/storage/overlay/bac2b3bdb00a35a13cafdf9624c67a55cf6da3294aba918c5a996937cccb91c6/diff",
+                    "WorkDir": "/home/francesco/.local/share/containers/storage/overlay/bac2b3bdb00a35a13cafdf9624c67a55cf6da3294aba918c5a996937cccb91c6/work"
+               }
+          },
+          "RootFS": {
+               "Type": "layers",
+               "Layers": [
+                    "sha256:bac2b3bdb00a35a13cafdf9624c67a55cf6da3294aba918c5a996937cccb91c6"
+               ]
+          },
+          "Labels": {
+               "org.opencontainers.image.base.name": "docker.io/bitnami/minideb:bullseye",
+               "org.opencontainers.image.created": "2023-05-29T13:50:49Z",
+               "org.opencontainers.image.description": "Application packaged by VMware, Inc",
+               "org.opencontainers.image.licenses": "Apache-2.0",
+               "org.opencontainers.image.ref.name": "1.25.0-debian-11-r2",
+               "org.opencontainers.image.title": "nginx",
+               "org.opencontainers.image.vendor": "VMware, Inc.",
+               "org.opencontainers.image.version": "1.25.0"
+          },
+          "Annotations": {},
+          "ManifestType": "application/vnd.docker.distribution.manifest.v2+json",
+          "User": "1001",
+          "History": [
+               {
+                    "created": "0001-01-01T00:00:00Z",
+                    "created_by": "crane flatten sha256:fded8eae953b6924c40aa2fdd1c508351e04b2046b027d9067435942e057e0e1",
+                    "comment": "[{\"created\":\"2023-05-12T00:10:11.513452739Z\",\"comment\":\"from Bitnami with love\"},{\"created\":\"2023-05-29T13:51:59.757571355Z\",\"created_by\":\"ARG TARGETARCH\",\"comment\":\"buildkit.dockerfile.v0\",\"empty_layer\":true},{\"created\":\"2023-05-29T13:51:59.757571355Z\",\"created_by\":\"LABEL org.opencontainers.image.base.name=docker.io/bitnami/minideb:bullseye org.opencontainers.image.created=2023-05-29T13:50:49Z org.opencontainers.image.description=Application packaged by VMware, Inc org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.ref.name=1.25.0-debian-11-r2 org.opencontainers.image.title=nginx org.opencontainers.image.vendor=VMware, Inc. org.opencontainers.image.version=1.25.0\",\"comment\":\"buildkit.dockerfile.v0\",\"empty_layer\":true},{\"created\":\"2023-05-29T13:51:59.757571355Z\",\"created_by\":\"ENV HOME=/ OS_ARCH=amd64 OS_FLAVOUR=debian-11 OS_NAME=linux\",\"comment\":\"buildkit.dockerfile.v0\",\"empty_layer\":true},{\"created\":\"2023-05-29T13:51:59.757571355Z\",\"created_by\":\"COPY prebuildfs / # buildkit\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:51:59.757571355Z\",\"created_by\":\"SHELL [/bin/bash -o pipefail -c]\",\"comment\":\"buildkit.dockerfile.v0\",\"empty_layer\":true},{\"created\":\"2023-05-29T13:52:04.049653617Z\",\"created_by\":\"RUN |1 TARGETARCH=amd64 /bin/bash -o pipefail -c install_packages ca-certificates curl libcrypt1 libgeoip1 libpcre3 libssl1.1 openssl procps zlib1g # buildkit\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:52:04.376754502Z\",\"created_by\":\"RUN |1 TARGETARCH=amd64 /bin/bash -o pipefail -c mkdir -p /tmp/bitnami/pkg/cache/ \\u0026\\u0026 cd /tmp/bitnami/pkg/cache/ \\u0026\\u0026     COMPONENTS=(       \\\"render-template-1.0.5-6-linux-${OS_ARCH}-debian-11\\\"       \\\"nginx-1.25.0-1-linux-${OS_ARCH}-debian-11\\\"     ) \\u0026\\u0026     for COMPONENT in \\\"${COMPONENTS[@]}\\\"; do       if [ ! -f \\\"${COMPONENT}.tar.gz\\\" ]; then         curl -SsLf \\\"https://downloads.bitnami.com/files/stacksmith/${COMPONENT}.tar.gz\\\" -O ;         curl -SsLf \\\"https://downloads.bitnami.com/files/stacksmith/${COMPONENT}.tar.gz.sha256\\\" -O ;       fi \\u0026\\u0026       sha256sum -c \\\"${COMPONENT}.tar.gz.sha256\\\" \\u0026\\u0026       tar -zxf \\\"${COMPONENT}.tar.gz\\\" -C /opt/bitnami --strip-components=2 --no-same-owner --wildcards '*/files' \\u0026\\u0026       rm -rf \\\"${COMPONENT}\\\".tar.gz{,.sha256} ;     done # buildkit\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:52:06.748497189Z\",\"created_by\":\"RUN |1 TARGETARCH=amd64 /bin/bash -o pipefail -c apt-get autoremove --purge -y curl \\u0026\\u0026     apt-get update \\u0026\\u0026 apt-get upgrade -y \\u0026\\u0026     apt-get clean \\u0026\\u0026 rm -rf /var/lib/apt/lists /var/cache/apt/archives # buildkit\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:52:06.849191229Z\",\"created_by\":\"RUN |1 TARGETARCH=amd64 /bin/bash -o pipefail -c chmod g+rwX /opt/bitnami # buildkit\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:52:06.933266486Z\",\"created_by\":\"RUN |1 TARGETARCH=amd64 /bin/bash -o pipefail -c ln -sf /dev/stdout /opt/bitnami/nginx/logs/access.log # buildkit\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:52:06.998142449Z\",\"created_by\":\"RUN |1 TARGETARCH=amd64 /bin/bash -o pipefail -c ln -sf /dev/stderr /opt/bitnami/nginx/logs/error.log # buildkit\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:52:07.035675577Z\",\"created_by\":\"COPY rootfs / # buildkit\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:52:07.185102382Z\",\"created_by\":\"RUN |1 TARGETARCH=amd64 /bin/bash -o pipefail -c /opt/bitnami/scripts/nginx/postunpack.sh # buildkit\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:52:07.185102382Z\",\"created_by\":\"ENV APP_VERSION=1.25.0 BITNAMI_APP_NAME=nginx NGINX_HTTPS_PORT_NUMBER= NGINX_HTTP_PORT_NUMBER= PATH=/opt/bitnami/common/bin:/opt/bitnami/nginx/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\"comment\":\"buildkit.dockerfile.v0\",\"empty_layer\":true},{\"created\":\"2023-05-29T13:52:07.185102382Z\",\"created_by\":\"EXPOSE map[8080/tcp:{} 8443/tcp:{}]\",\"comment\":\"buildkit.dockerfile.v0\",\"empty_layer\":true},{\"created\":\"2023-05-29T13:52:07.218287117Z\",\"created_by\":\"WORKDIR /app\",\"comment\":\"buildkit.dockerfile.v0\"},{\"created\":\"2023-05-29T13:52:07.218287117Z\",\"created_by\":\"USER 1001\",\"comment\":\"buildkit.dockerfile.v0\",\"empty_layer\":true},{\"created\":\"2023-05-29T13:52:07.218287117Z\",\"created_by\":\"ENTRYPOINT [\\\"/opt/bitnami/scripts/nginx/entrypoint.sh\\\"]\",\"comment\":\"buildkit.dockerfile.v0\",\"empty_layer\":true},{\"created\":\"2023-05-29T13:52:07.218287117Z\",\"created_by\":\"CMD [\\\"/opt/bitnami/scripts/nginx/run.sh\\\"]\",\"comment\":\"buildkit.dockerfile.v0\",\"empty_layer\":true}]"
+               }
+          ],
+          "NamesHistory": [
+               "docker.io/bitnami/nginx:latest"
+          ]
+     }
+]
